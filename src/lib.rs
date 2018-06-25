@@ -1,11 +1,20 @@
 pub mod sledsearch {
 
-pub struct SearchComponent {}
+    pub struct SearchComponent {
+        // Load(path)
+        // getScale() (or scale as a field value)
+    }
 
-pub struct SearchComponentResult {
-    //Vec<u32
-}
+    pub struct SearchComponentResult {
+        //field: Vec<u32>
+        // From/Into for &[u8]
+        // BitAnd for intersection
+    }
 
-pub struct SearchStrategy {}
+    pub struct MatchStrategy {
+        //field: components: Vec<dyn SearchComponent>
+        //field: groups=Vec/Array of indexes in components for matching
+        // derivePairs() -- generates all pairs needed based on Groups/components
+    }
 
 }
